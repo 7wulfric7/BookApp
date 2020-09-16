@@ -42,15 +42,55 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адреса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM8-hR-7yw">
+                                <rect key="frame" x="20" y="237" width="50" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Адреса" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lpn-wV-iSc" userLabel="txtAddress">
+                                <rect key="frame" x="20" y="264" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="87G-f8-Nk9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Држава" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbn-ES-llp">
+                                <rect key="frame" x="20" y="314" width="52" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Држава" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="den-yF-dhd" userLabel="txtCountry">
+                                <rect key="frame" x="20" y="341" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cxs-Ca-j5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zK4-Eh-5d2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3BJ-zg-gUF"/>
                             <constraint firstItem="E23-gE-9Vu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3sd-cR-7Pw"/>
                             <constraint firstItem="dhp-Zh-bW1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CWb-9A-LMI"/>
+                            <constraint firstItem="den-yF-dhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EDP-kb-seb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="den-yF-dhd" secondAttribute="trailing" constant="20" id="H1h-KF-xoG"/>
+                            <constraint firstItem="IM8-hR-7yw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hog-28-ePW"/>
+                            <constraint firstItem="IM8-hR-7yw" firstAttribute="top" secondItem="gAM-rO-msY" secondAttribute="bottom" constant="10" id="JyQ-WT-BfF"/>
+                            <constraint firstItem="Lpn-wV-iSc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YGO-uV-xuI"/>
+                            <constraint firstItem="Lpn-wV-iSc" firstAttribute="top" secondItem="IM8-hR-7yw" secondAttribute="bottom" constant="10" id="abP-Y9-egP"/>
                             <constraint firstItem="gAM-rO-msY" firstAttribute="top" secondItem="E23-gE-9Vu" secondAttribute="bottom" constant="10" id="cLI-xF-e9p"/>
                             <constraint firstItem="dhp-Zh-bW1" firstAttribute="top" secondItem="zK4-Eh-5d2" secondAttribute="bottom" constant="15" id="eGX-20-7V1"/>
+                            <constraint firstItem="den-yF-dhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fcx-CA-pwG"/>
+                            <constraint firstItem="den-yF-dhd" firstAttribute="top" secondItem="Lbn-ES-llp" secondAttribute="bottom" constant="10" id="ihe-ud-PVH"/>
+                            <constraint firstItem="Lpn-wV-iSc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jGW-IJ-cDk"/>
+                            <constraint firstItem="Lbn-ES-llp" firstAttribute="top" secondItem="Lpn-wV-iSc" secondAttribute="bottom" constant="10" id="oA0-Qs-DPr"/>
+                            <constraint firstItem="Lbn-ES-llp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pOl-TF-8qK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAM-rO-msY" secondAttribute="trailing" constant="20" id="tpg-wG-stm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lpn-wV-iSc" secondAttribute="trailing" constant="20" id="wUH-sj-GIx"/>
                             <constraint firstItem="gAM-rO-msY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="web-Pf-9Pk"/>
                             <constraint firstItem="E23-gE-9Vu" firstAttribute="top" secondItem="dhp-Zh-bW1" secondAttribute="bottom" constant="20" id="y1i-kM-QmG"/>
                             <constraint firstItem="zK4-Eh-5d2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="yvj-yF-bpP"/>
@@ -58,12 +98,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="txtAddress" destination="Lpn-wV-iSc" id="A7V-4d-V7l"/>
+                        <outlet property="txtCountry" destination="den-yF-dhd" id="1AN-mt-1QL"/>
                         <outlet property="txtFisrtName" destination="gAM-rO-msY" id="h5N-iO-IFT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="137.18140929535232"/>
+            <point key="canvasLocation" x="55.200000000000003" y="102.99850074962519"/>
         </scene>
     </scenes>
     <resources>
