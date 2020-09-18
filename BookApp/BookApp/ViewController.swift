@@ -30,12 +30,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
         //        txtNaselba.delegate = self
         
         for i in 1...4 {
-            if let textField = self.view.viewWithTag(i) as? UITextField {
-                textField.delegate = self
-                textField.layer.borderWidth = 1.0
-                textField.layer.borderColor = UIColor(red: 255/255.0, green: 99/255.0, blue: 71/255.0, alpha: 1.0).cgColor
-                textField.layer.cornerRadius = 10.0
+            if let holderView = self.view.viewWithTag(i + 10) {
+                if let textField = holderView.viewWithTag(i) as? UITextField {
+                    textField.delegate = self
+                    holderView.layer.borderWidth = 1.0
+                    holderView.layer.borderColor = UIColor(red: 255/255.0, green: 99/255.0, blue: 71/255.0, alpha: 1.0).cgColor
+                    holderView.layer.cornerRadius = 10.0
+                }
             }
+            
         }
     }
     
